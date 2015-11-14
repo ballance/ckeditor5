@@ -3,17 +3,44 @@
 <title>Testing CKEditor</title>
 </head>
 <body>
-	<h1>Here we go testing the editor</h1>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
-	<p>Lorem ipsum sit dolor amet.</p>
+	<div>
+		<h1>Here we go testing the editor</h1>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+		<p>Lorem ipsum sit dolor amet.</p>
+	</div>
+	<div class="clr"></div>
+          
+	<div id="app-container"
+         class="app-container"
+         ui-view>
+     </div>
+        <div class="global-alert" pz-alert></div>
+        <div class="global-loader" pz-loader>
+          <div class="global-loader__wrap" ng-hide="!globalLoading">
+            <div class="global-loader__logo"></div>
+            <div class="global-loader">
+              <span class="loader-wrap">
+                <span class="loader-main spinner">
+                  <span class="bounce1"></span>
+                  <span class="bounce2"></span>
+                  <span class="bounce3"></span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal-wrap" pz-modal tabindex="-1"></div>
+        <div class="modal fade" id="modal-2-wrap" pz-modal tabindex="-1"></div>
+      </div>
+    </div>
 </body>
 </html>
