@@ -1,46 +1,41 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Testing CKEditor</title>
-</head>
-<body>
-	<div>
-		<h1>Here we go testing the editor</h1>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-		<p>Lorem ipsum sit dolor amet.</p>
-	</div>
-	<div class="clr"></div>
+  <head>
+
+    <title>Testing ckEditor</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+
+    <meta http-equiv="imagetoolbar" content="no"/>
+    <base href="/">
+
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+        //<![CDATA[
+            window.location = '/update-browser';
+        //]]>
+    </script>
+    <![endif]-->
+
+    
+    <link id="google-fonts" href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:400,300,600,700&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body class="_app">
+
+
+    <div class="container-main">
+      <div>
+        <div class="app__wrap hide-sidebar--init">
+          <div class="banner" id="banner" pz-banner></div>
           
-	<div id="app-container"
-         class="app-container"
-         ui-view>
-     </div>
-        <div class="global-alert" pz-alert></div>
-        <div class="global-loader" pz-loader>
-          <div class="global-loader__wrap" ng-hide="!globalLoading">
-            <div class="global-loader__logo"></div>
-            <div class="global-loader">
-              <span class="loader-wrap">
-                <span class="loader-main spinner">
-                  <span class="bounce1"></span>
-                  <span class="bounce2"></span>
-                  <span class="bounce3"></span>
-                </span>
-              </span>
-            </div>
-          </div>
+          <div class="clr"></div>
+          <div id="app-container" class="app-container" ui-view></div>
         </div>
-        <div class="modal fade" id="modal-wrap" pz-modal tabindex="-1"></div>
-        <div class="modal fade" id="modal-2-wrap" pz-modal tabindex="-1"></div>
-      </div>
     </div>
-</body>
+
+    <script src="index.js"></script>
+  </body>
 </html>
